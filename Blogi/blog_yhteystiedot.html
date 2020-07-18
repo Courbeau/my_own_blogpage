@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ota yhteytt&auml;</title>
+        <link rel="stylesheet" href="blog_yhteystiedot_tyylittely.css">
+        <script src="blog_yhteystiedot_backend.js"></script>
+    </head>
+    <body>
+         <!-- Menu -->
+    <div class="navigointi_bar" id="navbar">
+        <a href="file:///C:/Users/Aaro%20Korpela/Documents/Blogi/blog_etusivu.html">Etusivu</a>
+        <a href="file:///C:/Users/Aaro%20Korpela/Documents/Blogi/blogfrontend.html">Uusin blogi postaus</a>
+        <a href="file:///C:/Users/Aaro%20Korpela/Documents/Blogi/blog_infosivu.html">Tietoa Aarosta</a>
+        <a class="tamanhetkinen" href="file:///C:/Users/Aaro%20Korpela/Documents/Blogi/blog_yhteystiedot.html">Ota yhteyttä</a>
+      </div>
+      <h1>Ota yhteyttä Aaroon</h1>
+      <h2></h2>
+      <p class="blogtext">Jos haluat tavoittaa minut voit lähettää viestin tältä nettisivulta tai voit lähettää viestiä alla oleviin someihin.</p>
+      <hr>
+
+    <div class="yhkortti_ja_viestilomake"> 
+     <!-- https://script.google.com/macros/s/AKfycbzAosZ5J9NfuTy_nkz7y_3SKuzGbUW4h_TZgYxb/exec -->
+
+      <!-- Lomake jolla voi lähettää viestin sähköpostiin-->
+        <form class="gform" action="https://script.google.com/macros/s/AKfycbzAosZ5J9NfuTy_nkz7y_3SKuzGbUW4h_TZgYxb/exec" method="POST" >
+                <h3>Lähetä viesti</h3>
+                <label for="name">Nimi: </label>
+                <input id="name" name="name" placeholder="Nimi/nimimerkki">
+        
+                <br>
+        
+                <br>
+                <label class="viesti_label" for="message">Viesti: </label>
+                <textarea id="message" name="message" cols="20" rows="4" placeholder="Tell us what's on your mind..."></textarea>
+        
+                <br>
+                <br>
+                <label for="email"> S-posti:</label>
+                <input id="email" name="email" type="email" value="" required="" placeholder="esimerkki.erno@email.com">
+        
+                <button id="nappula" class="button-success pure-button button-xlarge">
+                    <img src="file:///C:/Users/Aaro%20Korpela/Documents/Blogi/send_icon.png" alt="Lähetä">
+                </button>  
+
+                <div style="display:none" class="thankyou_message">
+                    <!-- You can customize the thankyou message by editing the code below -->
+                    <h3>Kiitos, että otit yhteyttä meihin! Palaamme asiaan mahdollisimman pian!
+                    </h3>
+                </div>  
+        </form>
+        <div class="somet">
+            <!-- Yhteystieto kortti-->
+          <h3>Yhteystieto kortti</h3>
+          <br>
+          <h3>Linkedin: <a class="somet_yksitellen" href="https://www.linkedin.com/in/aaro-korpela-4389201ab/" target="blank">Aaro Korpela</a></h3>
+          <h3>Twitter: <a class="somet_yksitellen" href="https://twitter.com/korpela_aaro" target="blank">korpela_aaro</a></h3>
+          <h3>Instagram: <a class="somet_yksitellen" href="https://www.instagram.com/korpela_a/?hl=fi" target="blank">korpela_a</a></h3>
+        </div>
+    </div>
+      <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+
+    </body>
+
+
+
+</html>
